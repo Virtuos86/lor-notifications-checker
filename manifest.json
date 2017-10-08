@@ -1,0 +1,36 @@
+{
+
+  "description": "Check notifications in your profile on Linux.org.ru.\n\nYou can click on a button with L.O.R.'s good penguin in add-on toolbar or use \"Ctrl+Space\" keyboard shortcut to check notifications.\nAlso \"Ctrl+Shift+Space\" shortcut will create a new tab and open L.O.R.",
+  "manifest_version": 2,
+  "name": "L.O.R. Notifications Checker",
+  "version": "0.2.0",
+  "homepage_url": "https://www.linux.org.ru/people/Virtuos86/profile",
+  "icons": {
+    "32": "icons/good-penguin-32.png",
+    "48": "icons/good-penguin-48.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/good-penguin.png"
+  },
+
+  "permissions": [
+    "https://www.linux.org.ru/",
+    "notifications"
+  ],
+  
+  "commands": {
+    "check-lor": {
+      "suggested_key": { "default": "Ctrl+Space" },
+      "description": "Check notifications via keyboard shortcut"
+    },
+    "open-lor-notifications": {
+      "suggested_key": { "default": "Ctrl+Shift+Space" },
+      "description": "Open \"Notifications\" on L.O.R. in a new tab via keyboard shortcut"
+    }
+  }
+}
