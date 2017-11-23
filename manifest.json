@@ -1,8 +1,15 @@
 {
-  "description": "Check notifications in your profile on Linux.org.ru.\n\nYou can click on a button with L.O.R.'s good penguin in add-on toolbar or use \"Ctrl+Space\" (\"Command+Space\" on macOS) keyboard shortcut to check notifications.\nAlso \"Ctrl+Shift+Space\" (\"Command+Shift+Space\" on macOs) shortcut will create a new tab and open L.O.R.",
+  "applications": {
+      "gecko": {
+        "id": "virtuos86@lor-notifications.checker",
+        "strict_min_version": "52.0"
+      }
+  },
+
+  "description": "Check notifications in your profile on Linux.org.ru.\n\nYou can click on a button with L.O.R.'s good penguin in add-on toolbar or use \"Ctrl+Space\" (\"Command+Space\" on macOS) keyboard shortcut to check notifications.\nAlso \"Ctrl+Shift+Space\" (\"Command+Shift+Space\" on macOS) shortcut will create a new tab and open L.O.R.",
   "manifest_version": 2,
   "name": "L.O.R. Notifications Checker",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "homepage_url": "https://www.linux.org.ru/people/Virtuos86/profile",
   "icons": {
     "32": "icons/good-penguin-32.png",
